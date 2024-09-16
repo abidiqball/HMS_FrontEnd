@@ -1,0 +1,95 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .not-found-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* 404 Big Number Styling */
+  .not-found-container h1 {
+    font-size: 100px;
+    color: #e74c3c;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Subtitle */
+  .not-found-container h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Description */
+  .not-found-container p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+  }
+  
+  /* Home Button */
+  .home-button {
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .not-found-container h1 {
+      font-size: 80px;
+    }
+  
+    .not-found-container h2 {
+      font-size: 24px;
+    }
+  
+    .not-found-container p {
+      font-size: 16px;
+    }
+  
+    .home-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
