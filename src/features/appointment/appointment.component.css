@@ -1,31 +1,111 @@
+/* Container for the appointment table */
 .appointment-table-container {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background: linear-gradient(135deg, #f7f7fa, #eef1f7);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  max-width: 1200px;
+  transition: all 0.3s ease;
+}
+
+/* Heading style */
+.appointment-table-container h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+}
+
+/* Add a subtle underline to the heading */
+.appointment-table-container h2:after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #4CAF50;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+/* Table styles */
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.appointment-table th, .appointment-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.appointment-table th {
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.appointment-table td {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Add background gradient for table rows */
+.appointment-table tbody tr {
+  background: linear-gradient(to right, #fff, #f7f7f7);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.appointment-table tbody tr:nth-child(even) {
+  background: linear-gradient(to right, #f7f7f7, #fff);
+}
+
+/* Add a hover effect */
+.appointment-table tbody tr:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+/* Highlight cells when hovered */
+.appointment-table tbody td:hover {
+  color: #00796b;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+}
+
+/* Special styling for important cells like date */
+.appointment-table td.date, .appointment-table th.date {
+  color: #00796b;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .appointment-table-container {
+      padding: 20px;
+      margin: 15px;
   }
-  
-  .appointment-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
+
   .appointment-table th, .appointment-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+      padding: 10px;
+      font-size: 12px;
   }
-  
-  .appointment-table th {
-    background-color: #4e08036c;
-    color: white;
+
+  .appointment-table-container h2 {
+      font-size: 22px;
   }
-  
-  .appointment-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .appointment-table tbody tr:hover {
-    background-color: #f1f1f1;
-  }
-  
+}

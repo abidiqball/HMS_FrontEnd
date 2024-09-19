@@ -7,11 +7,15 @@ import { AppointmentComponent } from '../features/appointment/appointment.compon
 import { BillingComponent } from '../features/billing/billing.component';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AdminComponent } from '../features/admin/admin.component';
+import { AdminCreateComponent } from '../features/admin-create/admin-create.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule,NgbModule,RouterLink,RouterLinkActive, DoctorComponent, PatientComponent, DepartmentComponent, AppointmentComponent, BillingComponent ],
+  imports: [RouterOutlet,CommonModule,NgbModule,RouterLink,RouterLinkActive, DoctorComponent, 
+            PatientComponent, DepartmentComponent, AppointmentComponent, BillingComponent, 
+            AdminComponent, AdminCreateComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

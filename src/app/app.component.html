@@ -11,6 +11,13 @@
     <div class="main-content">
       <!-- Left Sidebar -->
       <aside class="sidebar">
+        <a 
+          class="sidebar-link"
+          routerLink="/admin"
+          routerLinkActive="active">
+          <i class="fas fa-user-shield"></i>
+          <span>Admin</span>
+        </a>
         <a class="sidebar-button" routerLink="patient" routerLinkActive="active">
           Patients
         </a>
@@ -25,6 +32,10 @@
           <a class="sidebar-button" routerLink="billing" routerLinkActive="active">
             Billings
           </a>
+          <a class="sidebar-button" routerLink="admin" routerLinkActive="active">
+            Admins
+          </a>
+          
       </aside>
   
       <!-- Main View (Router Outlet) -->

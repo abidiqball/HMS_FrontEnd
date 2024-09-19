@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeedsService } from '../../services/seeds-service';
+import { IPatient, SeedsService } from '../../services/seeds-service';
 
 @Component({
   selector: 'app-patient',
@@ -9,7 +9,7 @@ import { SeedsService } from '../../services/seeds-service';
 })
 export class PatientComponent {
   name:string='Patient'
-  patients: any;
+  patients: IPatient[]=[];
   constructor(private seedsService : SeedsService) { }
 
   ngOnInit() 
